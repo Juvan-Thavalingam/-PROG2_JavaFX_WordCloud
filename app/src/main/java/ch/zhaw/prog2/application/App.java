@@ -3,12 +3,13 @@
  */
 package ch.zhaw.prog2.application;
 
+import com.sun.tools.javac.Main;
+import javafx.application.Application;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        Application.launch(MainWindow.class, args);
     }
 }
